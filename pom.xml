@@ -1,0 +1,128 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>SeleniumTestNGFramework</groupId>
+	<artifactId>SeleniumTestNGFramework</artifactId>
+	<version>1.00.00-SNAPSHOT</version>
+	<!-- <packaging>jar</packaging> <name>SeleniumTestNGFramework</name> <description>A 
+		Selenium and TestNG based automation testing project</description> -->
+
+	<properties>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.surefire.version>3.1.2</maven.surefire.version>
+		<maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+		<testng.version>7.1.0</testng.version>
+		<selenium.java.version>3.141.59</selenium.java.version>
+		<webdrivermanager.version>4.1.0</webdrivermanager.version>
+		<slf4j.simple.version>1.7.30</slf4j.simple.version>
+		<extentreports.version>4.1.7</extentreports.version>
+		<apache.poi.version>4.1.2</apache.poi.version>
+		<apache.poi.ooxml.version>4.1.2</apache.poi.ooxml.version>
+		<extentreports.testng.adapter.version>1.0.7</extentreports.testng.adapter.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports-testng-adapter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-java</artifactId>
+				<version>${selenium.java.version}</version>
+				<!-- <scope>test</scope> -->
+			</dependency>
+			<dependency>
+				<groupId>io.github.bonigarcia</groupId>
+				<artifactId>webdrivermanager</artifactId>
+				<version>${webdrivermanager.version}</version>
+				<!-- <scope>test</scope> -->
+			</dependency>
+			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<version>${testng.version}</version>
+				<!-- <scope>test</scope> -->
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-simple</artifactId>
+				<version>${slf4j.simple.version}</version>
+				<!-- <scope>test</scope> -->
+			</dependency>
+			<dependency>
+				<groupId>com.aventstack</groupId>
+				<artifactId>extentreports</artifactId>
+				<version>${extentreports.version}</version>
+				<!-- <scope>test</scope> -->
+			</dependency>
+			<dependency>
+				<groupId>com.aventstack</groupId>
+				<artifactId>extentreports-testng-adapter</artifactId>
+				<version>${extentreports.testng.adapter.version}</version>
+				<!-- <scope>test</scope> -->
+				<exclusions>
+					<exclusion>
+						<groupId>com.aventstack</groupId>
+						<artifactId>extentreports</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi</artifactId>
+				<version>${apache.poi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-ooxml</artifactId>
+				<version>${apache.poi.ooxml.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<!-- <build> <plugins> Compiler plug-in <plugin> <groupId>org.apache.maven.plugins</groupId> 
+		<artifactId>maven-compiler-plugin</artifactId> <version>${maven.compiler.plugin.version}</version> 
+		<configuration> <source>${java.version}</source> <target>${java.version}</target> 
+		</configuration> </plugin> Below plug-in is used to execute tests <plugin> 
+		<groupId>org.apache.maven.plugins</groupId> <artifactId>maven-dependency-plugin</artifactId> 
+		<version>${maven.surefire.version}</version> <configuration> <suiteXmlFiles> 
+		TestNG suite XML files <suiteXmlFile>testng.xml</suiteXmlFile> </suiteXmlFiles> 
+		</configuration> </plugin> </plugins> </build> -->
+</project>
