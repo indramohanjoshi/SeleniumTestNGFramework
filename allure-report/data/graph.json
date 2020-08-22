@@ -1,0 +1,31 @@
+[ {
+  "uid" : "eead3df776dd32de",
+  "name" : "demoTest1",
+  "time" : {
+    "start" : 1597331549761,
+    "stop" : 1597331560770,
+    "duration" : 11009
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "684c4a828c0df485",
+  "name" : "testAuthenticationWhenValidCredential",
+  "time" : {
+    "start" : 1597331526852,
+    "stop" : 1597331549592,
+    "duration" : 22740
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d7346f3154b87c7",
+  "name" : "demoTest2",
+  "time" : {
+    "start" : 1597331560806,
+    "stop" : 1597331571883,
+    "duration" : 11077
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

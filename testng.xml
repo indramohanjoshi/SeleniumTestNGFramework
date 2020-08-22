@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRMTestSuite" thread-count="4" parallel="tests">
+
+		<parameter name="userName" value="Admin" />
+		<parameter name="password" value="admin123" />
+
+	<listeners>
+		<listener class-name="com.example.selenium.listners.WebDriverListner"></listener>
+	</listeners>
+	
+	<test name="LoginLogoutTest" thread-count="5" parallel="methods">
+		<parameter name="paramBrowserType" value="CHROME" />
+		<parameter name="paramLoginUrl" value="https://opensource-demo.orangehrmlive.com/index.php/auth" />
+		<parameter name="paramDashboardUrl" value="https://opensource-demo.orangehrmlive.com/index.php/dashboard" />
+		<parameter name="timeout" value="10"/>
+		<classes>
+			<class name="com.example.selenium.tests.LoginTest" />
+		</classes>
+	</test>
+	
+	<test name="DemoTest" thread-count="5" parallel="methods">
+	<parameter name="paramBrowserType" value="CHROME" />
+		<parameter name="paramLoginUrl" value="https://opensource-demo.orangehrmlive.com/index.php/auth" />
+		<parameter name="paramDashboardUrl" value="https://opensource-demo.orangehrmlive.com/index.php/dashboard" />
+		<parameter name="timeout" value="10"/>
+		<classes>
+			<class name="com.example.selenium.tests.DemoTest" />
+		</classes>
+	</test>
+	
+</suite> 

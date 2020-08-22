@@ -1,0 +1,168 @@
+{
+  "uid" : "eead3df776dd32de",
+  "name" : "demoTest1",
+  "fullName" : "com.example.selenium.tests.DemoTest.demoTest1",
+  "historyId" : "a8acb13b60843142571462c251c4415f",
+  "time" : {
+    "start" : 1597331549761,
+    "stop" : 1597331560770,
+    "duration" : 11009
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "springTestContextBeforeTestClass",
+    "time" : {
+      "start" : 1597331549725,
+      "stop" : 1597331549727,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "springTestContextPrepareTestInstance",
+    "time" : {
+      "start" : 1597331549727,
+      "stop" : 1597331549743,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "springTestContextBeforeTestMethod",
+    "time" : {
+      "start" : 1597331549749,
+      "stop" : 1597331549753,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "statusDetails" : {
+      "flaky" : false
+    },
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4d54a40b30c4ea3f",
+      "name" : "page Screenshot",
+      "source" : "4d54a40b30c4ea3f.png",
+      "type" : "image/png",
+      "size" : 104786
+    } ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "springTestContextAfterTestMethod",
+    "time" : {
+      "start" : 1597331560777,
+      "stop" : 1597331560783,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "springTestContextAfterTestClass",
+    "time" : {
+      "start" : 1597331571888,
+      "stop" : 1597331571890,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "doAfterSuite",
+    "time" : {
+      "start" : 1597331571902,
+      "stop" : 1597331571902,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.example.selenium.tests.DemoTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.example.selenium.tests.DemoTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "demoTest1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "OrangeHRMTestSuite"
+  }, {
+    "name" : "suite",
+    "value" : "DemoTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.example.selenium.tests.DemoTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-14H6K99"
+  }, {
+    "name" : "thread",
+    "value" : "13828@DESKTOP-14H6K99.TestNG-test=DemoTest-1(22)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  } ],
+  "parameters" : [ {
+    "name" : "paramBrowserType",
+    "value" : "CHROME"
+  }, {
+    "name" : "paramDashboardUrl",
+    "value" : "https://opensource-demo.orangehrmlive.com/index.php/dashboard"
+  }, {
+    "name" : "timeout",
+    "value" : "10"
+  }, {
+    "name" : "paramLoginUrl",
+    "value" : "https://opensource-demo.orangehrmlive.com/index.php/auth"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

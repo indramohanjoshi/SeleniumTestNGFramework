@@ -1,37 +1,22 @@
 package com.example.selenium.data.providers;
 
-import java.io.IOException;
-
 import org.testng.annotations.DataProvider;
 
-import com.example.selenium.constants.LoginTestConstant;
-import com.example.selenium.utils.ExcelReaderUtil;
+import com.example.selenium.constants.TestDataConstant;
 
-public class LoginDataProvider {
-
+public class LoginDataProvider extends BaseDataProvider {
+	
+	private static final String IN_VALID_LOGIN_DATA_FILE = "InValidLoginData.xlsx";
+	private static final String VALID_LOGIN_DATA_FILE = "ValidLoginData.xlsx";
+	
 	@DataProvider(name = "LoginValidDataProvider")
 	public static Object[][] getDataValidLoginData() {
-		Object[][] data = null;
-		try {
-			data = ExcelReaderUtil.readExcel(getFilePath(), "ValidLoginData.xlsx", null);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return data;
+		return constructObjectArray(TestDataConstant.LOGIN_TEST_DATA_PATH, VALID_LOGIN_DATA_FILE, null);
 	}
 
 	@DataProvider(name = "LoginInValidDataProvider")
 	public static Object[][] getDataInValidLoginData() {
-		Object[][] data = null;
-		try {
-			data = ExcelReaderUtil.readExcel(getFilePath(), "InValidLoginData.xlsx", null);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return data;
+		return constructObjectArray(TestDataConstant.LOGIN_TEST_DATA_PATH, IN_VALID_LOGIN_DATA_FILE, null);
 	}
-	
-	private static String getFilePath() {
-		return System.getProperty("user.dir") + LoginTestConstant.TEST_DATA_PATH;
-	}
+
 }

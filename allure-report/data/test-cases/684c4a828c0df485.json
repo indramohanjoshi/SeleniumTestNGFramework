@@ -1,0 +1,316 @@
+{
+  "uid" : "684c4a828c0df485",
+  "name" : "testAuthenticationWhenValidCredential",
+  "fullName" : "com.example.selenium.tests.LoginTest.testAuthenticationWhenValidCredential",
+  "historyId" : "dc100b61be05282d0ea636421fd43721",
+  "time" : {
+    "start" : 1597331526852,
+    "stop" : 1597331549592,
+    "duration" : 22740
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "springTestContextBeforeTestMethod",
+    "time" : {
+      "start" : 1597331526437,
+      "stop" : 1597331526446,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "springTestContextBeforeTestClass",
+    "time" : {
+      "start" : 1597331522614,
+      "stop" : 1597331522637,
+      "duration" : 23
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "springTestContextPrepareTestInstance",
+    "time" : {
+      "start" : 1597331522639,
+      "stop" : 1597331524353,
+      "duration" : 1714
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "statusDetails" : {
+      "flaky" : false
+    },
+    "steps" : [ {
+      "name" : "set text: Admin in input field after clearing the input field",
+      "time" : {
+        "start" : 1597331538398,
+        "stop" : 1597331538741,
+        "duration" : 343
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "steps" : [ {
+        "name" : "Finding element by locator",
+        "time" : {
+          "start" : 1597331538400,
+          "stop" : 1597331538541,
+          "duration" : 141
+        },
+        "status" : "passed",
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "By.xpath: //*[@id=\"txtUsername\"]"
+        } ]
+      }, {
+        "name" : "Finding element by locator",
+        "time" : {
+          "start" : 1597331538613,
+          "stop" : 1597331538643,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "By.xpath: //*[@id=\"txtUsername\"]"
+        } ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "By.xpath: //*[@id=\"txtUsername\"]"
+      }, {
+        "name" : "text",
+        "value" : "Admin"
+      } ]
+    }, {
+      "name" : "set text: admin123 in input field after clearing the input field",
+      "time" : {
+        "start" : 1597331538741,
+        "stop" : 1597331538982,
+        "duration" : 241
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "steps" : [ {
+        "name" : "Finding element by locator",
+        "time" : {
+          "start" : 1597331538741,
+          "stop" : 1597331538789,
+          "duration" : 48
+        },
+        "status" : "passed",
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "By.xpath: //*[@id=\"txtPassword\"]"
+        } ]
+      }, {
+        "name" : "Finding element by locator",
+        "time" : {
+          "start" : 1597331538853,
+          "stop" : 1597331538889,
+          "duration" : 36
+        },
+        "status" : "passed",
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "By.xpath: //*[@id=\"txtPassword\"]"
+        } ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "By.xpath: //*[@id=\"txtPassword\"]"
+      }, {
+        "name" : "text",
+        "value" : "admin123"
+      } ]
+    }, {
+      "name" : "Clicking element By locator",
+      "time" : {
+        "start" : 1597331538983,
+        "stop" : 1597331542776,
+        "duration" : 3793
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "By.xpath: //*[@id=\"btnLogin\"]"
+      } ]
+    }, {
+      "name" : "Get current Url",
+      "time" : {
+        "start" : 1597331542777,
+        "stop" : 1597331542789,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ {
+      "uid" : "abfcb594f246919d",
+      "name" : "page Screenshot",
+      "source" : "abfcb594f246919d.png",
+      "type" : "image/png",
+      "size" : 60916
+    } ],
+    "hasContent" : true,
+    "stepsCount" : 8,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "springTestContextAfterTestMethod",
+    "time" : {
+      "start" : 1597331549647,
+      "stop" : 1597331549653,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "springTestContextAfterTestClass",
+    "time" : {
+      "start" : 1597331549657,
+      "stop" : 1597331549660,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "doAfterSuite",
+    "time" : {
+      "start" : 1597331571902,
+      "stop" : 1597331571902,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.example.selenium.tests.LoginTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.example.selenium.tests.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testAuthenticationWhenValidCredential"
+  }, {
+    "name" : "parentSuite",
+    "value" : "OrangeHRMTestSuite"
+  }, {
+    "name" : "suite",
+    "value" : "LoginLogoutTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.example.selenium.tests.LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-14H6K99"
+  }, {
+    "name" : "thread",
+    "value" : "13828@DESKTOP-14H6K99.TestNG-test=LoginLogoutTest-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  } ],
+  "parameters" : [ {
+    "name" : "arg2",
+    "value" : "https://opensource-demo.orangehrmlive.com/index.php/dashboard"
+  }, {
+    "name" : "paramBrowserType",
+    "value" : "CHROME"
+  }, {
+    "name" : "arg1",
+    "value" : "admin123"
+  }, {
+    "name" : "arg0",
+    "value" : "Admin"
+  }, {
+    "name" : "paramDashboardUrl",
+    "value" : "https://opensource-demo.orangehrmlive.com/index.php/dashboard"
+  }, {
+    "name" : "timeout",
+    "value" : "10"
+  }, {
+    "name" : "paramLoginUrl",
+    "value" : "https://opensource-demo.orangehrmlive.com/index.php/auth"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}
